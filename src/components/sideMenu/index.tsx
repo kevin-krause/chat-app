@@ -1,23 +1,23 @@
-import React from 'react'
+import SideMenu from './SideMenu'
+import {
+    FaHome,
+    FaComments,
+    FaUser,
+    FaBell,
+    FaCalendar,
+    FaCog
+} from 'react-icons/fa'
 
-// side menu component, has to be abstract
+const menuItems = [
+    { title: 'Home', icon: FaHome, link: '/home' },
+    { title: 'Chat', icon: FaComments, link: '/chat' },
+    { title: 'Contact', icon: FaUser, link: '/contact' },
+    { title: 'Notifications', icon: FaBell, link: '/notifications' },
+    { title: 'Calendar', icon: FaCalendar, link: '/calendar' },
+    { title: 'Settings', icon: FaCog, link: '/settings' }
+]
 
-export const index = () => {
-    return (
-        <>
-            <p>componente com info de perfil, foto e menu com dropdown</p>
-            <p>
-                <ul>
-                    <li>home</li>
-                    <li>chat</li>
-                    <li>contact</li>
-                    <li>notifications</li>
-                    <li>calendar</li>
-                    <li>settings</li>
-                </ul>
-            </p>
-
-            <button>log out</button>
-        </>
-    )
+const SideMenuComponent = () => {
+    return <SideMenu items={menuItems} />
 }
+export default SideMenuComponent
