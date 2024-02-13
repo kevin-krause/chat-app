@@ -3,8 +3,12 @@
 }
 
 .side-menu-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .home-page-container {
+    background: linear-gradient(180deg, #f8f3fb 0%, #fdfbfd 100%);
     width: 100%;
 }

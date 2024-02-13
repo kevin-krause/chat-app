@@ -21,8 +21,12 @@ function App() {
     return (
         <div className="main-container">
             <div className="side-menu-container">
-                <ProfileContainer imgUrl={user.profilePicture} />
-                <SideMenu />
+                <div className='profile-container'>
+                    <ProfileContainer imgUrl={user.profilePicture} />
+                </div>
+                <div>
+                    <SideMenu />
+                </div>
             </div>
 
             <div className="home-page-container">
