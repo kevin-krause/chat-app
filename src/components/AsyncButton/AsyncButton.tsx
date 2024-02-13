@@ -1,5 +1,6 @@
 import React from 'react'
 import { IconType } from 'react-icons'
+import './AsyncButton.scss'
 
 export interface IButtonProps {
     title: string

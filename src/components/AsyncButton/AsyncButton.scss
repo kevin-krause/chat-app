@@ -1,0 +1,39 @@
+// async-button.scss
+
+.async-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    background: linear-gradient(92.68deg, #7cb8f7 0%, #2a8bf2 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15),
+        4px 4px 25px rgba(42, 139, 242, 0.05),
+        10px 6px 25px rgba(42, 139, 242, 0.15);
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    border: none;
+    transition: background 0.3 ease;
+
+    &:hover {
+        background: linear-gradient(92.68deg, hsl(210, 89%, 14%) 0%, #075bae 100%);
+    }
+
+    // Adjust the styling for the icon
+    svg {
+        margin-right: 4px; // Add some spacing between icon and text
+        font-size: 20px; // Adjust the icon size as needed
+    }
+
+    span {
+        margin-left: 8px; // Add some spacing between icon and text
+    }
+}
