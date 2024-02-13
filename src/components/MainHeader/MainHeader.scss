@@ -1,0 +1,19 @@
+.main-header {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-content: center;
+    .button-container {
+        margin: 2rem;
+        height: fit-content;
+    }
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+        .main-title {
+            margin-bottom: -5px;
+        }
+    }
+}
