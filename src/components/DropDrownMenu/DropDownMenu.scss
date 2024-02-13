@@ -1,0 +1,25 @@
+// DropDownMenu.scss
+
+.dropdown-menu {
+    width: 150px; // Adjust the width as needed
+    border: none;
+    background-color: #fff;
+    color: #707c97;
+    font-size: 14px;
+    outline: none; // Remove the default select box outline
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+        border-color: #707c97;
+    }
+
+    .dropdown-option {
+        color: #707c97;
+        transition: background-color 0.3s ease;
+        border: none;
+        &:hover {
+            background-color: #707c97; // Adjust the hover background color
+        }
+    }
+}

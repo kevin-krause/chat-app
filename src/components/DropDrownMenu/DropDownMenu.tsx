@@ -1,4 +1,5 @@
 import React from 'react'
+import './DropDownMenu.scss'
 
 type TOptionProps = {
     item: string
@@ -15,10 +16,13 @@ const DropDownMenu: React.FC<DropDownMenuProps> = props => {
     const { optionProps } = props
     return (
         <div>
-            <label>Select an option:</label>
-            <select id="dropdown">
+            <select id="dropdown" className="dropdown-menu">
                 {optionProps.map((object, index) => (
-                    <option key={index} value={object.value}>
+                    <option
+                        key={index}
+                        value={object.value}
+                        className="dropdown-option"
+                    >
                         {object.item}
                     </option>
                 ))}
