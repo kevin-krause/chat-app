@@ -1,6 +1,7 @@
 .main-container {
     display: flex;
     height: 100vh;
+    overflow: hidden;
 }
 
 .side-menu-container {
@@ -16,4 +17,22 @@
 
 .profile-container {
     margin-bottom: 12px;
+}
+
+.message-container {
+    max-height: 100%; /* Ajuste a altura máxima conforme necessário */
+    overflow-y: auto;
+}
+
+.message-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    background-color: #888888de;
+    border-radius: 5px;
+}
+
+.message-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
 }

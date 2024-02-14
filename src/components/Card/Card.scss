@@ -6,10 +6,33 @@
     border-radius: 15px;
 
     img {
+        margin-right: 12px;
         border-radius: 50%;
-        height: 10%;
-        width: 10%;
+        height: 50px;
+        width: 50px;
         padding: 2px;
         border: 1px solid;
+    }
+
+    .profile-box {
+        display: flex;
+        align-items: center; /* Center items vertically */
+    }
+
+    .name-box {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .name-item {
+        font-weight: 700;
+        margin-bottom: -10px;
+    }
+
+    .status-item {
+        color: #2a8bf2;
+    }
+
+    .message-box {
+        color: #707c97;
     }
 }

@@ -5,7 +5,7 @@ import ProfileContainer from './components/ProfileContainer'
 import MainHeader from './components/MainHeader'
 import { FaPlus, FaSearch } from 'react-icons/fa'
 import SearchBar from './components/SearchBar'
-import cardsData from './fakedata'
+import { cardsData } from './fakedata'
 import Card from './components/Card'
 
 // dev dependencies
@@ -41,21 +41,6 @@ const handleClick = () => {
     return null
 }
 
-type TNotification = {
-    user: string
-    message: string
-    summary: string
-    time: number
-}
-const notification: TNotification = {
-    user: 'User1',
-    message: 'Message1',
-    summary: 'Summary1',
-    time: 1234567890
-}
-
-const list: TNotification[] = [notification]
-
 function App() {
     return (
         <div className="main-container">
@@ -84,12 +69,11 @@ function App() {
                     type={searchInput.type}
                     options={searchOptions}
                 />
-                
-                <Card
-                    imgUrl={user.profilePicture}
-                    name="kevin"
-                    notifications={list}
-                />
+                <div className='message-container'>
+                    {cardsData.map((card, index) => (
+                        <Card key={index} cardInfo={card} />
+                    ))}
+                </div>
             </div>
 
             {/* <SearchBar />
