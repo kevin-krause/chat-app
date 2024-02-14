@@ -1,6 +1,8 @@
 import React from 'react'
 import { IconType } from 'react-icons'
 import './SideMenu.scss'
+import FormButton from '../FormButton/FormButton'
+import { FaPlus } from 'react-icons/fa'
 
 type MenuItem = {
     title: string
@@ -10,6 +12,9 @@ type MenuItem = {
 
 type SideMenuProps = {
     items: MenuItem[]
+}
+const handleClick = () => {
+    console.log('handleClick')
 }
 
 const SideMenu: React.FC<SideMenuProps> = ({ items }) => {
@@ -25,8 +30,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ items }) => {
                     </li>
                 ))}
             </ul>
-
-            <button>log out</button>
+            <FormButton icon={FaPlus} onclick={handleClick} title="log out" />
         </>
     )
 }

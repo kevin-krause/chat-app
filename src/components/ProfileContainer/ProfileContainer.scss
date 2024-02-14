@@ -1,0 +1,23 @@
+// ProfileContainer.scss
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; // Adicione esta linha para centralizar verticalmente
+    text-align: center; // Adicione esta linha para centralizar o texto
+  
+    img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+  
+    // Adicione estilos ao DropDownMenu, se necessário
+    .dropdown-menu {
+      // Selecione o DropDownMenu e adicione estilos conforme necessário
+    }
+  }
+  

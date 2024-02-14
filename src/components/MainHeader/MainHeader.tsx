@@ -6,16 +6,16 @@ import './MainHeader.scss'
 
 const dropDownItems = [
     {
-        item: 'profile',
-        value: 'profile'
+        item: 'chats',
+        value: 'chats'
     },
     {
-        item: 'config',
-        value: 'config'
+        item: 'teams',
+        value: 'teams'
     },
     {
-        item: 'share',
-        value: 'share'
+        item: 'sheets',
+        value: 'sheets'
     }
 ]
 const MainHeader: React.FC<IButtonProps> = props => {

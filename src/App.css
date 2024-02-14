@@ -12,3 +12,7 @@
     background: linear-gradient(180deg, #f8f3fb 0%, #fdfbfd 100%);
     width: 100%;
 }
+
+.profile-container {
+    margin-bottom: 12px;
+}

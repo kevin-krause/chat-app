@@ -1,21 +1,18 @@
 // async-button.scss
 
-.async-button {
+.form-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 15px;
+    padding: 5px 10px;
     font-size: 16px;
-    background: linear-gradient(92.68deg, #7cb8f7 0%, #2a8bf2 100%);
-    color: #fff;
+    color: #707c97;
     cursor: pointer;
     transition: background 0.3s ease;
-    box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15),
-        4px 4px 25px rgba(42, 139, 242, 0.05),
-        10px 6px 25px rgba(42, 139, 242, 0.15);
+
     border-radius: 6px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 12px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -24,9 +21,12 @@
     transition: background 0.3 ease;
 
     &:hover {
-        background: linear-gradient(92.68deg, #76ace4cd 0%, #1d64afd2 100%);
-
-        box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15),
+        background: linear-gradient(
+            92.68deg,
+            #075aae16 100%,
+            hsla(210, 89%, 14%, 0.128) 0%
+        );
+        box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.043),
             4px 4px 25px rgba(42, 139, 242, 0.05),
             10px 6px 25px rgba(42, 139, 242, 0.15);
     }

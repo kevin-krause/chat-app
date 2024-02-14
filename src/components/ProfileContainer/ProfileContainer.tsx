@@ -1,7 +1,9 @@
 import DropDownMenu from '../DropDrownMenu'
+import './ProfileContainer.scss'
 
 type ProfileContainerProps = {
     imgUrl: string
+    name: string
 }
 
 const dropDownItems = [
@@ -20,10 +22,10 @@ const dropDownItems = [
 ]
 
 const ProfileContainer: React.FC<ProfileContainerProps> = props => {
-    const imgUrl = props.imgUrl
     return (
         <div>
-            <img src={imgUrl} alt="profile" />
+            <img src={props.imgUrl} alt="profile" />
+            <h4>{props.name}</h4>
             <DropDownMenu optionProps={dropDownItems} />
         </div>
     )
