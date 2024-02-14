@@ -26,7 +26,9 @@ const ProfileContainer: React.FC<ProfileContainerProps> = props => {
         <div>
             <img src={props.imgUrl} alt="profile" />
             <h4>{props.name}</h4>
-            <DropDownMenu optionProps={dropDownItems} />
+            <div className="dropdown-menu">
+                <DropDownMenu optionProps={dropDownItems} />
+            </div>
         </div>
     )
 }
