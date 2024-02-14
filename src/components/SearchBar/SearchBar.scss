@@ -1,0 +1,27 @@
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    span,
+    input {
+        font-size: 20px;
+        margin-right: 10px;
+        width: fit-content;
+        color: #707c97;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        background: #d4181800;
+    }
+    select {
+        border: none;
+        color: #707c97ab;
+        font-size: 20px;
+        border-left: 2px solid #707c976d;
+        padding-left: 2rem;
+    }
+}
